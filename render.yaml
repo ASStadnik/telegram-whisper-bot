@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: telegram-whisper-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: BOT_TOKEN
+        value: 7616672879:AAGnj3gd5R1eSS4UA6zEj2JfMdD5ZWBMCE8
